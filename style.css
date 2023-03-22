@@ -2,6 +2,30 @@
     font-family: 'Playfair Display', serif;
 }
 
+.title {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    text-align: center;
+}
+
+.title-small-screen {
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 html,
 body {
     margin: 0;
@@ -27,6 +51,150 @@ body {
 hr {
     background: linear-gradient(to right, #611818 50%, rgba(97, 24, 24, 0.01) 50%) !important;
     height: 2px;
-    width: 25%;
+    width: 50%;
     margin: 0 auto 1rem;
+}
+
+.modal {
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+}
+
+/* Responsive font size and spacing */
+.title {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.title-small {
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.text-small {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Media queries */
+@media (max-width: 1199px) {
+    .title {
+        font-size: 4.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .title-small {
+        font-size: 3rem;
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .text-small {
+        font-size: 0.85rem;
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .title {
+        font-size: 4rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .title-small {
+        font-size: 2.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .text-small {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 3rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .title-small {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .text-small {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .modal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .title-small {
+        font-size: 1.5rem;
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .text-small {
+        font-size: 0.7rem;
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    hr {
+        width: 75%;
+        margin: 0 auto 1rem;
+    }
+
+    /* Apply the class for small screens */
+    .title-small-screen {
+        text-align: center;
+
+    }
+
+    .left-1\/4 {
+        left: 0;
+    }
+
+    .-translate-x-1\/2 {
+        --tw-translate-x: 0;
+    }
 }
