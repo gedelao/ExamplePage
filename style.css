@@ -1,0 +1,32 @@
+.didot {
+    font-family: 'Playfair Display', serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-custom {
+    background-color: #611818;
+}
+
+.text-custom {
+    color: #611818;
+}
+
+.logo {
+    font-size: 40px;
+}
+
+.bg-gradient-to-br {
+    background-image: linear-gradient(to bottom right, #611818, #A36754);
+}
+
+hr {
+    background: linear-gradient(to right, #611818 50%, rgba(97, 24, 24, 0.01) 50%) !important;
+    height: 2px;
+    width: 25%;
+    margin: 0 auto 1rem;
+}
